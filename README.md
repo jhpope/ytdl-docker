@@ -4,17 +4,17 @@ Dockerized youtube-dl
 
 A simple Alpine based Docker image to run ytdl. Includes ffmpeg for muxing.
 
-##Usage
-####Build the image
+## Usage
+#### Build the image
 
 `docker build -t ytdl-docker .`
 
-####Configure
+#### Configure
 Edit the sample `youtube-dl.conf`. A full list of configuration options can be found [here](https://github.com/ytdl-org/youtube-dl#options).
 
 Edit the `batch.txt` file with a list of URLs, one per line, that you want to download.
 
-####Run the container
+#### Run the container
 Edit the volume paths as needed
 ```
 docker run --rm -d \
